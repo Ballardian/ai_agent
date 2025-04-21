@@ -1,0 +1,25 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pytest (>=8.3.5,<9.0.0)",
+    "onnxruntime (<=1.16.1)",
+    "chromadb (>=1.0.5,<2.0.0)",
+    "spire-doc (>=13.3.8,<14.0.0)",
+    "click (>=8.1.8,<9.0.0)",
+    "numpy (<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "backend", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
